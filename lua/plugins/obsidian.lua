@@ -33,17 +33,15 @@ return {
         time_format = "%H:%M",
       },
     },
-    keys = function()
-      return {
-        { "<leader>oq", "<cmd>ObsidianQuickSwitch<CR>", desc = "Quick Switch" },
-        { "<leader>os", "<cmd>ObsidianSearch<CR>", desc = "Search" },
-        { "<leader>on", "<cmd>ObsidianNew<CR>", desc = "New" },
-        { "<leader>ot", "<cmd>ObsidianToday<CR>", desc = "Note for TODAY (open or create)" },
-        { "<leader>oy", "<cmd>ObsidianYesterday<CR>", desc = "Note for YESTERDAY (open or create)" },
-        { "<leader>oo", "<cmd>ObsidianOpen<CR>", desc = "Open in the Obsidian App" },
-        { "<leader>oT", "<cmd>ObsidianTemplate<CR>", desc = "List templates to insert" },
-        { "<leader>of", "<cmd>ObsidianFollowLink<CR>", desc = "Follow Link" },
-      }
-    end,
+    keys = {
+      { "<leader>oq", "<cmd>ObsidianQuickSwitch<CR>", desc = "Quick Switch" },
+      { "<leader>os", "<cmd>ObsidianSearch<CR>", desc = "Search" },
+      { "<leader>on", "<cmd>ObsidianNew<CR>", desc = "New" },
+      { "<leader>ot", "<cmd>ObsidianToday<CR>", desc = "Note for TODAY (open or create)" },
+      { "<leader>oy", "<cmd>ObsidianYesterday<CR>", desc = "Note for YESTERDAY (open or create)" },
+      { "<leader>oo", "<cmd>ObsidianOpen<CR>", desc = "Open in the Obsidian App" },
+      { "<leader>oT", "<cmd>ObsidianTemplate<CR>", desc = "List templates to insert" },
+      { "<leader>of", "<cmd>ObsidianFollowLink<CR>", desc = "Follow Link" },
+    },
   },
 }
