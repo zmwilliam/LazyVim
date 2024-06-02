@@ -1,3 +1,7 @@
+-- No more luasnip, package.json can be used to determine filetypes
+-- https://github.com/garymjr/nvim-snippets/issues/5
+if true then return {} end
+
 return {
   "rafamadriz/friendly-snippets",
   config = function()
