@@ -10,6 +10,9 @@ return {
         -- "mtime",
       },
       view_options = { show_hidden = true },
+      float = {
+        padding = 4,
+      },
       keymaps = {
         ["q"] = "actions.close",
         ["H"] = "actions.toggle_hidden",

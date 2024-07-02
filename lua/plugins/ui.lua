@@ -1,13 +1,14 @@
+local transparency_enabled = false
 return {
   {
     "folke/tokyonight.nvim",
     lazy = true,
     opts = {
       style = "night",
-      transparent = true,
+      transparent = transparency_enabled,
       styles = {
-        sidebars = "transparent",
-        floats = "transparent",
+        sidebars = transparency_enabled and "transparent" or "dark",
+        floats = transparency_enabled and "transparent" or "dark",
       },
       on_highlights = function(hl, c)
         hl.CmpPmenu = {
@@ -16,6 +17,17 @@ return {
           blend = 0,
         }
       end,
+    },
+  },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      variant = "auto", -- auto, main, moon, or dawn
+      dark_variant = "main", -- main, moon, or dawn
+      styles = {
+        transparency = transparency_enabled,
+      },
     },
   },
   {
