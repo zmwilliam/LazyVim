@@ -1,9 +1,10 @@
 return {
   {
     "folke/which-key.nvim",
+    event = "VeryLazy",
     opts = {
-      defaults = {
-        ["<leader>o"] = { name = "+Obsidian Notes" },
+      spec = {
+        { "<leader>o", group = "Obsidian Notes", icon = { icon = " " } },
       },
     },
   },
