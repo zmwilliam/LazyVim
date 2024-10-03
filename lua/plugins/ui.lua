@@ -1,14 +1,13 @@
-local transparency_enabled = false
 return {
   {
     "folke/tokyonight.nvim",
     lazy = true,
     opts = {
       style = "night",
-      transparent = transparency_enabled,
+      transparent = false,
       styles = {
-        sidebars = transparency_enabled and "transparent" or "dark",
-        floats = transparency_enabled and "transparent" or "dark",
+        sidebars = "dark",
+        floats = "dark",
       },
       on_highlights = function(hl, c)
         hl.CmpPmenu = {
@@ -26,8 +25,18 @@ return {
       variant = "auto", -- auto, main, moon, or dawn
       dark_variant = "main", -- main, moon, or dawn
       styles = {
-        transparency = transparency_enabled,
+        transparency = false,
       },
+    },
+  },
+  {
+    "jesseleite/nvim-noirbuddy",
+    dependencies = { { "tjdevries/colorbuddy.nvim" } },
+    lazy = false,
+    priority = 1000,
+    opts = {
+      --"minimal", "miami-nights", "kiwi", "slate", "crt-green", "crt-amber", "northern-lights.lua"
+      preset = "slate",
     },
   },
   {

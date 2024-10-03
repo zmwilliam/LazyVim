@@ -2,7 +2,9 @@ return {
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
   {
     "stevearc/oil.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
+    ---@module 'oil'
+    ---@type oil.SetupOpts
+    dependencies = { { "echasnovski/mini.icons", opts = {} } },
     opts = {
       columns = {
         "icon",
