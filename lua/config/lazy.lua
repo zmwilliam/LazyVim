@@ -22,6 +22,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.python" },
     { import = "lazyvim.plugins.extras.lang.clangd" },
     { import = "lazyvim.plugins.extras.lang.elixir" },
+    { import = "lazyvim.plugins.extras.lang.rust" },
     -- import/override with your plugins
     { import = "plugins" },
   },
@@ -35,11 +36,7 @@ require("lazy").setup({
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
   install = {
-    colorscheme = {
-      "tokyonight",
-      "habamax",
-      "noirbuddy",
-    },
+    colorscheme = { "tokyonight" },
   },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {

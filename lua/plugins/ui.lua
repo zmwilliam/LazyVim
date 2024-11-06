@@ -16,27 +16,7 @@ return {
           blend = 0,
         }
       end,
-    },
-  },
-  {
-    "rose-pine/neovim",
-    name = "rose-pine",
-    opts = {
-      variant = "auto", -- auto, main, moon, or dawn
-      dark_variant = "main", -- main, moon, or dawn
-      styles = {
-        transparency = false,
-      },
-    },
-  },
-  {
-    "jesseleite/nvim-noirbuddy",
-    dependencies = { { "tjdevries/colorbuddy.nvim" } },
-    lazy = false,
-    priority = 1000,
-    opts = {
-      --"minimal", "miami-nights", "kiwi", "slate", "crt-green", "crt-amber", "northern-lights.lua"
-      preset = "slate",
+      on_colors = function(colors) colors.border = colors.bg_highlight end,
     },
   },
   {
