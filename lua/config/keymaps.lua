@@ -14,6 +14,9 @@ unmap({ "n" }, "<leader>gf")
 -- unmap({ "n" }, "<leader>gg")
 unmap({ "n" }, "<leader>gG")
 
+-- Unmap save files
+unmap({ "n" }, "<C-s>")
+
 -- Clipboard
 map({ "n", "v" }, "<leader>d", [["+d]], { desc = "delete to clipboard" })
 map({ "n", "v" }, "<leader>p", [["+p]], { desc = "paste from clipboard (after)" })
