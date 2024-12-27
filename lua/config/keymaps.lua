@@ -9,11 +9,6 @@ local unmap = vim.keymap.del
 unmap({ "n", "i", "v" }, "<A-j>")
 unmap({ "n", "i", "v" }, "<A-k>")
 
--- Unmap Lazygit
-unmap({ "n" }, "<leader>gf")
--- unmap({ "n" }, "<leader>gg")
-unmap({ "n" }, "<leader>gG")
-
 -- Unmap save files
 unmap({ "n" }, "<C-s>")
 

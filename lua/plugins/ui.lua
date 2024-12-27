@@ -10,7 +10,7 @@ return {
         floats = "dark",
       },
       on_highlights = function(hl, c)
-        hl.CmpPmenu = {
+        hl.BlinkCmpMenuBorder = {
           bg = "none",
           fg = c.border_highlight,
           blend = 0,
@@ -22,24 +22,7 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      win = {
-        border = "rounded",
-      },
-    },
-  },
-  {
-    "hrsh7th/nvim-cmp",
-    opts = {
-      window = {
-        completion = {
-          border = "rounded",
-          winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenu,CursorLine:PmenuSel,Search:None",
-        },
-        documentation = {
-          border = "rounded",
-          winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenu",
-        },
-      },
+      preset = "modern",
     },
   },
   {

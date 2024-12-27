@@ -1,18 +1,13 @@
 return {
-  "hrsh7th/nvim-cmp",
-  ---@param opts cmp.ConfigSchema
-  opts = function(_, opts)
-    local cmp = require("cmp")
-
-    opts.mapping = vim.tbl_extend("force", opts.mapping, {
-      -- show completion only for vsnip snippets.
-      ["<C-s>"] = cmp.mapping.complete({
-        config = {
-          sources = {
-            { name = "snippets" },
-          },
-        },
-      }),
-    })
-  end,
+  "saghen/blink.cmp",
+  opts = {
+    completion = {
+      menu = { border = "rounded" },
+      documentation = { window = { border = "rounded" } },
+    },
+    signature = { window = { border = "rounded" } },
+    keymap = {
+      ["<C-s>"] = { function(cmp) cmp.show({ providers = { "snippets" } }) end },
+    },
+  },
 }

@@ -3,3 +3,5 @@
 -- Add any additional options here
 vim.opt.clipboard = ""
 vim.g.lazygit_config = false
+vim.g.snacks_animate = false
+vim.g.lazyvim_picker = "telescope"
