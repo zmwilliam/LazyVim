@@ -2,7 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-local map = vim.keymap.set
+--local map = vim.keymap.set
+local map = LazyVim.safe_keymap_set
 local unmap = vim.keymap.del
 
 -- Disable move lines
@@ -10,9 +11,9 @@ unmap({ "n", "i", "v" }, "<A-j>")
 unmap({ "n", "i", "v" }, "<A-k>")
 
 -- Unmap Lazygit
-unmap({ "n" }, "<leader>gf")
+-- unmap({ "n" }, "<leader>gf")
 -- unmap({ "n" }, "<leader>gg")
-unmap({ "n" }, "<leader>gG")
+-- unmap({ "n" }, "<leader>gG")
 
 -- Unmap save files
 unmap({ "n" }, "<C-s>")
