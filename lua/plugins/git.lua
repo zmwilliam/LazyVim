@@ -19,7 +19,7 @@ return {
     "NeogitOrg/neogit",
     dependencies = {
       "nvim-lua/plenary.nvim", -- required
-      "nvim-telescope/telescope.nvim", -- optional
+      "ibhagwan/fzf-lua", -- optional
       "sindrets/diffview.nvim", -- optional
     },
     cmd = { "Neogit" },
