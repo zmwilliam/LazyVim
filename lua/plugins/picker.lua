@@ -1,5 +1,18 @@
 return {
   "ibhagwan/fzf-lua",
+  opts = {
+    winopts = {
+      preview = {
+        hidden = true,
+      },
+    },
+    keymap = {
+      builtin = {
+        ["<M-\\>"] = "toggle-preview-ccw",
+        ["<C-\\>"] = "toggle-preview",
+      },
+    },
+  },
   keys = {
     {
       "<leader>sf",

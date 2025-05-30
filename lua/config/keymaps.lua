@@ -10,7 +10,7 @@ unmap({ "n", "i", "v" }, "<A-j>")
 unmap({ "n", "i", "v" }, "<A-k>")
 
 -- Unmap save files
-unmap({ "n" }, "<C-s>")
+-- unmap({ "n" }, "<C-s>")
 
 -- Clipboard
 map({ "n", "v" }, "<leader>d", [["+d]], { desc = "delete to clipboard" })
