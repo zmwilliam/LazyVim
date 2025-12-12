@@ -2,7 +2,19 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine",
+      -- colorscheme = "rose-pine",
+      colorscheme = "kanso",
+    },
+  },
+  {
+    "webhooked/kanso.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      background = { -- map the value of 'background' option to a theme
+        dark = "ink", -- try "zen", "mist" or "pearl" !
+        light = "ink", -- try "zen", "mist" or "pearl" !
+      },
     },
   },
   {
@@ -36,7 +48,7 @@ return {
     },
   },
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ui = { border = "rounded" },
     },

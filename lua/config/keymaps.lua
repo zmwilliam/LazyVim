@@ -24,6 +24,6 @@ map({ "v" }, "p", [["_dP]], { desc = "Visual paste without yanking" })
 -- Motion
 map({ "n" }, "<C-d>", "<C-d>zz", { desc = "page down (centering)" })
 map({ "n" }, "<C-u>", "<C-u>zz", { desc = "page down (centering)" })
--- map({ "n" }, "n", "nzzzv", { desc = "repeat last search (centering)" })
--- map({ "n" }, "N", "Nzzzv", { desc = "repeat last search, in opposite direction (centering)" })
+map({ "n" }, "n", "nzzzv", { desc = "repeat last search (centering)" })
+map({ "n" }, "N", "Nzzzv", { desc = "repeat last search, in opposite direction (centering)" })
 map({ "n" }, "J", "mzJ`z", { desc = "join N-1 lines, keeping cursor position" })
